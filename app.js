@@ -3,6 +3,7 @@
      const avatarIcon = document.getElementById("avatar-icon");
      const avatarBtnContainer = document.getElementById ("avatar-btn-container");
      const dragDropPar = document.querySelector("#avatar-label > div p");
+<<<<<<< HEAD
      const removeUploadedFileBtn = document.querySelector("#avatar-btn-container button#remove-img");
      const nameInput = document.getElementById("fullname")
      const emailInput =document.getElementById("email") 
@@ -20,6 +21,9 @@
      const ticketIdPar = document.querySelector ("#ticket-main #ticketid")
 
      const defaultAvatar = avatarIcon.src;
+=======
+
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
      avatarImageInput.onchange = () => {
         let reader;
         if (avatarImageInput.files && avatarImageInput.files[0]) {
@@ -36,6 +40,7 @@
         }
         reader.readAsDataURL(avatarImageInput.files[0]);
      } 
+<<<<<<< HEAD
      removeUploadedFileBtn.onclick = () => {
         avatarImageInput.files = null;
         avatarBtnContainer.style.display =  "none";
@@ -60,4 +65,6 @@
         ticketMain.style.display = "block";
     }
 
+=======
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
     

@@ -15,7 +15,11 @@ body {
     background-size: cover;
 }
 #ticket-main {
+<<<<<<< HEAD
     display: none;
+=======
+    display: block;
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
 }
 #form-main {
     display: block;
@@ -81,7 +85,11 @@ form > button {
     cursor: pointer;
 }
 #avatar-label > div{
+<<<<<<< HEAD
     border: 1px dashed hsl(252, 6%, 83%);
+=======
+    border: 1px solid hsl(252, 6%, 83%);
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
     border-radius: 7px;
     text-align: center;
     padding: 15px;
@@ -100,12 +108,17 @@ form > button {
 #avatar-btn-container {
     display: none;
 }
+<<<<<<< HEAD
 #avatar-btn-container button, #avatar-btn-container span {
+=======
+#avatar-btn-container button {
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
     background-color: hsla(245, 6%, 83%, 0.2);
     color: hsla(252, 15%, 83%);
     display: inline-block;
     width: unset;
     border: none;
+<<<<<<< HEAD
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
@@ -113,6 +126,12 @@ form > button {
 #avatar-btn-container button#remove-img {
     text-decoration: underline;
     cursor: pointer;
+=======
+    padding: 5px 10px;
+}
+#avatar-btn-container button#remove-img {
+    text-decoration: underline;
+>>>>>>> ecc69c945384fb15130a82287bc38475d17ffdac
 }
 form p.info.flex{
     color: hsl(252, 6%, 83%);
