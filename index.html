@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Conference ticket generator</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="#">
+      <img src="assets/images/logo-full.svg" alt="coding conf logo">
+    </a>
+  </header>
+
+  <main id="form-main">
+    <h1> Your Journey to coding Conf </h1>
+    <p> Secure your spot at next year's biggest coding conference.</p>
+
+    <form action="">
+      <div>
+        <label for="avatar" id="avatar-label">
+          <p>Upload Avatar</p>
+          <div>
+            <img src="assets/images/icon-upload.svg" alt="upload" id="avatar-icon">
+            <div id="avatar-btn-container">
+              <button id="remove-img" type="button">Remove Image</button>
+              <span id="change-img" type="span">Change Image</span>
+            </div>
+            <p id="">Drag and drop or click to upload</p>
+          </div>
+        </label>
+        <input type="file" id="avatar">
+        <p class="info flex">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16"><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M2 8a6 6 0 1 0 12 0A6 6 0 0 0 2 8Z"/><path fill="#D1D0D5" d="M8.004 10.462V7.596ZM8 5.57v-.042Z"/><path stroke="#D1D0D5" stroke-linecap="round" stroke-linejoin="round" d="M8.004 10.462V7.596M8 5.569v-.042"/></svg>
+         <span> Upload your photo (JPG or PNG, max size: 500KB).</span>
+        </p>
+      </div>
+
+      <div>
+        <label for=" fullname"> Full Name</label>
+        <input type="text" id="fullname">
+        <p class="error">error</p>
+      </div>
+
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="example@email.com">
+        <p class="error">error</p>
+      </div>
+      
+      <div>
+        <label for="gitusername"> GitHub Username</label>
+        <input type="text" id="gitusername" placeholder="@yourusername">
+        <p class="error">error</p>
+      </div>
+      <button type="submit"> Generate My Ticket </button>
+   
+    </form>
+  </main>
+  
+  <main id="ticket-main">
+    <h1>Congrats, <span> jonathan kristof</span> Your ticket is ready. </h1>
+    <p> We've emailed your ticket to <span>jonathan@email.com </span> and will send updates in the run up to the event.</p>
+    <div id="ticket-container">
+      <div class="flex">
+        <div class="flex" id="details-container">
+         <div class="flex" id="event-details">
+          <img src="assets/images/logo-mark.svg" alt="logo-mark">
+          <div>
+            <h2>Coding Conf</h2>
+            <p> Jan 31, 2025 / Austin, TX</p>
+          </div>
+        </div>
+
+      <div class="flex" id="user-info">
+        <img src="assets/images/image-avatar.jpg" alt="image-avatar" id="user-info-img">
+      <div>
+        <p id="user-name">jonathan Kristof</p>
+        <p class="flex">
+          <img src="assets/images/icon-github.svg" alt="image-avatar">
+          <span id="user-gitid">@jonathankristontalF101</span>
+        </p>
+        </div>
+      </div>
+    </div>
+      <p id="ticketid"> #01609</p>
+     </div>
+    </div>
+  </main>
+
+
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="app.js">
+
+  </script>
+</body>
+</html>

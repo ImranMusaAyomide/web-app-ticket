@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+body {
+    background-image: url(assets/images/background-desktop.png);
+    background-size: cover;
+}
+#ticket-main {
+    display: none;
+}
+#form-main {
+    display: block;
+}
+
+header {
+    margin: 20px auto;
+    text-align: center;
+}
+header img {
+    width: 170px;    
+}
+main {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+main > h1 {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+main > p {
+    color: hsl(252, 6%, 83%);
+    text-align: center;
+    margin: 20px 0px;
+}
+form {
+    max-width: 350px;
+    margin: 10px auto;
+}
+form label {
+    display: block;
+    color: hsl(252, 6%, 83%);
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+}
+form input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    background: transparent;
+    border: 1px solid hsl(252, 6%, 83%);
+}
+form input, form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid  hsl(252, 6%, 83%);
+    border-radius: 5px;
+    color: hsl(252, 6%, 83%);
+    background: transparent;
+    border: 1px solid hsl(252, 6%, 83%);
+}
+form > button {
+    background-color: hsl(7, 88%, 67%);
+    color: hsl(248, 70%, 10%);
+    font-weight: 700;
+    border-color: hsl(7, 71%, 60%);
+    cursor: pointer;
+}
+#avatar-label > div{
+    border: 1px dashed hsl(252, 6%, 83%);
+    border-radius: 7px;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+}
+#avatar-label + input{
+    display: none; 
+}
+#avatar-label > div img {
+    background-color: hsla(252, 29%, 93%, 0.2);
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 60px;
+}
+#avatar-btn-container {
+    display: none;
+}
+#avatar-btn-container button, #avatar-btn-container span {
+    background-color: hsla(245, 6%, 83%, 0.2);
+    color: hsla(252, 15%, 83%);
+    display: inline-block;
+    width: unset;
+    border: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#avatar-btn-container button#remove-img {
+    text-decoration: underline;
+    cursor: pointer;
+}
+form p.info.flex{
+    color: hsl(252, 6%, 83%);
+    font-size: 0.7rem;
+    justify-content: flex-start;
+}
+form p.info.flex svg {
+    margin-right: 5px;
+}
+/* Ticket Styling */
+#ticket-main > h1 span {
+    background: -webkit-linear-gradient( to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background: linear-gradient( to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-size: 35px; */
+}
+#ticket-main > p {
+    /* font-size: 0.8rem; */
+    max-width: 400px;
+    margin: 20px auto;
+}
+#ticket-main > p span {
+    color: hsl(7, 71%, 60%);
+}
+#ticket-container {
+    background-image: url(assets/images/pattern-ticket.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 20px;
+    min-height: 220px;
+    /* border-image-repeat: stretch;
+    border-image-width: 30px; */
+}
+#ticket-container > .flex {
+    justify-content: space-between;
+}
+#ticket-container div .flex {
+    justify-content: flex-start;
+}
+#ticket-container #details-container.flex {
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 160px;
+    align-items: flex-start;
+}
+#ticket-container #event-details.flex{
+    align-items: flex-start;
+}
+#ticket-container #event-details.flex h2{
+    color: hsl(0, 0%, 100%); 
+    /* margin-top: -5px;    */
+}
+#ticket-container #event-details.flex p{
+    color: hsl(252, 6%, 83%);
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+#ticket-container #event-details.flex img{
+   width: 30px;
+   margin-right: 15px;
+}
+#ticket-container #user-info > img {
+    width: 50px;
+   border-radius: 10px;
+   margin-right: 15px;
+}
+#ticket-container #user-info p#user-name{
+    color: hsl(252, 6%, 83%);
+    font-size: 1.2rem;
+}
+#ticket-container #user-info p#user-name + p{
+    color: hsl(252, 6%, 83%);
+}
+#ticketid {
+    writing-mode: horizontal-lr;
+    color: hsl(252, 6%, 83%);   
+    font-size: 1.3rem;
+
+}
